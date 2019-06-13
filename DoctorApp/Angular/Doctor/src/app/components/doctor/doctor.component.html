@@ -1,0 +1,19 @@
+<p>
+  Doctor Detail:
+</p>
+
+  <div style="padding-left: 20px;">
+    <div>Name: <span style="font-size:larger">{{doctor?.name}}</span> <span *ngIf="doctor?.isSuperStar" style="color:red; font-size:small"> Superstar</span>  </div>
+    <div>Language Spoken: <span style="font-size:larger">{{doctor?.language?.name}}</span></div>
+    <div>Medical School: <span style="font-size:larger">{{doctor?.medicalSchool?.name}}</span></div>  
+
+    <p>Specialties</p>
+    
+    <div style="padding-left: 20px;">
+      <ng-template ngFor let-item [ngForOf]="doctor?.doctorSpecialties" let-i="index">
+        <li>{{item.specialty?.name}}</li>
+      </ng-template>
+    </div>
+
+  </div>
+ 

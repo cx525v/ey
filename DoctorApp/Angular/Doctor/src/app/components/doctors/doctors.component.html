@@ -1,0 +1,19 @@
+<kendo-grid [data]="doctors" 
+            [height]="410" 
+            [resizable] ="true" >
+    <kendo-grid-command-column width="220" title="Name">
+        <ng-template kendoGridCellTemplate let-dataItem="dataItem">
+            <a href='/doctor/{{dataItem.id}}'>
+              {{dataItem.name}}
+            </a>     
+            <span *ngIf="dataItem.isSuperStar" style="color:red; font-size:small">Superstar</span>     
+        </ng-template>
+    </kendo-grid-command-column>  
+  <kendo-grid-column field="gender" title="Gender" width="80">
+  </kendo-grid-column>
+  <kendo-grid-column field="averageRating" title="Average Rating" width="120">
+  </kendo-grid-column>
+  <kendo-grid-column field="specialties" title="Specialties" width="400">
+  </kendo-grid-column>  
+
+</kendo-grid>

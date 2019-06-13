@@ -1,0 +1,442 @@
+/* Kendo Custom functions for users */
+
+.k-grid td {
+    padding: .35rem;
+}
+
+.k-widget,
+.k-button {
+    font-size: 1.2rem;
+}
+
+.k-filter-row th {
+    padding: 2px;
+}
+
+.k-numerictextbox,
+.k-textbox,
+.k-dropdown {
+    margin-left: 0px !important;
+}
+
+.k-grid,
+.k-tabstrip,
+.k-tabstrip>.k-tabstrip-items {
+    width: 100%;
+}
+
+.text-danger {
+    color: red !important;
+}
+
+.text-warning {
+    color: orange !important;
+}
+
+.text-success {
+    color: green !important;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-bottom-10 {
+    margin-top: 10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.k-button.k-primary,
+.k-slider .k-draghandle,
+.k-switch-on .k-switch-handle {
+    color: #245267;
+    background-color: #73d9fa;
+    border-color: #73d9fa;
+    background-image: none;
+}
+
+.k-action-buttons .k-primary:hover,
+.k-button.k-primary.k-flat.k-state-hover,
+.k-button.k-primary.k-flat:hover,
+.k-button.k-primary.k-state-hover,
+.k-button.k-primary:hover,
+.k-dialog-buttongroup .k-button.k-primary.k-state-hover,
+.k-dialog-buttongroup .k-button.k-primary:hover,
+.k-slider .k-draghandle:hover,
+.k-switch-on:hover .k-switch-handle {
+    color: #245267;
+    background-color: #9edcdc;
+    border-color: #9edcdc;
+    background-image: none;
+}
+
+.k-tabstrip .k-item,
+.k-tabstrip>.k-tabstrip-items .k-item .k-link {
+    color: #1b6487;
+}
+
+.k-link,
+.k-link:hover {
+    color: #46819e;
+}
+
+.k-tabstrip-top>.k-tabstrip-items .k-item.k-state-active {
+    font-weight: bold;
+}
+
+.k-grid-content a {
+    color: #337ab7;
+}
+
+.k-grid-content a:hover {
+    color: #337ab7;
+    text-decoration: underline;
+}
+
+.k-pager-wrap .k-link,
+.k-pager-wrap .k-state-selected {
+    width: auto;
+}
+
+.k-grid-toolbar {
+    background: none;
+}
+
+.k-grid {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.k-grid-header {
+    border-top: 3px solid #73d9fa;
+}
+
+.k-grid-toolbar .k-grid-add-command {
+    background-color: #73d9fa;
+    background-image: none;
+    border-color: #73d9fa;
+    color: #245267;
+}
+
+.k-grid-toolbar .k-grid-add-command:hover {
+    background-color: #9edcdc;
+    background-image: none;
+    border-color: #9edcdc;
+    color: #245267;
+}
+
+.k-list .k-item.k-state-selected {
+    color: #245267;
+    background-color: #73d9fa;
+    width: 120px;
+
+}
+
+.k-list .k-item.k-state-selected:hover,
+.k-list .k-item:hover {
+    color: #245267;
+    background-color: #9edcdc;
+}
+
+.k-dropdown .k-dropdown-wrap {
+    background: none;
+}
+
+.k-panelbar .k-content {
+    background: none;
+}
+
+.k-grid-header .k-header>.k-link {
+    font-weight: bold;
+    color: #245267;
+}
+
+.k-grouping-row td {
+    padding: 0.35rem 0 0 0;
+}
+
+.k-grouping-row .k-reset {
+    background-color: #e7f8ff;
+    color: #245267;
+    padding: 0.35rem;
+    font-weight: normal;
+}
+
+.k-group-footer td,
+.k-grouping-row td,
+tbody .k-group-cell {
+    background-color: white;
+}
+
+
+/*grid css changes on system jobs page*/
+
+.k-filtercell .k-filtercell-operator {
+    margin-left: 0px;
+    /*below line added to adjust kendo grid header height*/
+    height: calc(8px + 1.4285714286em);
+}
+
+.k-filtercell .k-filtercell-wrapper,
+.k-filtercell>span {
+    padding-right: 0px;
+    position: relative;
+
+}
+
+.k-datepicker .k-select,
+.k-datetimepicker .k-select,
+.k-timepicker .k-select {
+    padding: 0;
+     /* below line commented  to make changes in kendo grid filter with calaender */  
+    /* margin-right: -23px; */
+    width: calc(8px + 1.42857em);
+    border-width: 0;
+}
+
+
+
+
+.k-scheduler .k-scheduler-monthview .k-scheduler-content  .k-event{
+    margin-top: 10px;
+}
+.k-scheduler .k-scheduler-weekview .k-scheduler-content  .k-event{
+    border-top-color: #fff !important;
+}
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-more-events {
+    margin-top: 10px;
+    background: none;
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.k-event .sf-event-template {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap  .k-event .sf-event-template .fa,
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .fa {
+    float: left;
+    margin-left: -5px;
+    margin-top: 4px;
+    margin-right: 4px;
+
+}
+
+.k-scheduler .k-scheduler-dayview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-title,
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-title,
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .sf-event-title {
+    display: inline-block;
+    text-overflow: ellipsis;
+    /* width: 88px; */
+    /* height: 23px; */
+    overflow: hidden;
+    padding-right: 3px;
+    position: relative;
+    flex: 1;
+    white-space: nowrap;
+    
+}
+
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-title{
+    /* width: 75px; */
+    flex: 1;
+}
+
+.k-scheduler .k-scheduler-dayview .k-scheduler-content .k-event .sf-event-template .sf-event-title,
+.k-scheduler .k-scheduler-dayview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-title {
+    width: calc(100% - 200px);
+    display: inline-table;
+}
+
+.k-scheduler .k-scheduler-dayview .k-event .sf-event-template .sf-detail-box,
+.k-scheduler .k-scheduler-dayview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-detail-box,
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-detail-box,
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .sf-detail-box {
+    display: inline-block;
+    height: 23px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    max-width: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+.k-scheduler .k-scheduler-dayview .k-event .sf-event-template .sf-detail-box,
+.k-scheduler .k-scheduler-dayview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-detail-box {
+    display: inline-table;
+    margin-top: 3px;
+}
+.k-scheduler .k-scheduler-weekview .k-scheduler-content .k-event .sf-event-template .sf-detail-box {
+    display: block;
+    height: auto;
+    padding: 3px 6px;
+    border-radius: 3px; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-detail-box  .fa,
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .sf-detail-box  .fa {
+    float: none;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+
+}
+
+.k-scheduler .k-scheduler-dayview .k-event .sf-event-template .sf-event-workflow-status,
+.k-scheduler .k-scheduler-dayview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-workflow-status,
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-workflow-status,
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .sf-event-workflow-status {
+    background: #ff0000;
+    color: #fff;
+}
+.k-scheduler .k-scheduler-weekview .k-scheduler-content .k-event .sf-event-template .sf-event-workflow-status {
+    background: #ff0000;
+    color: #fff;
+    display: table;
+}
+
+.k-scheduler .k-scheduler-dayview .k-event .sf-event-template .sf-event-workflow-duration, 
+.k-scheduler .k-scheduler-dayview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-workflow-duration, 
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-workflow-duration, 
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .sf-event-workflow-duration {
+    background: #ffe599;
+    color: #000;
+}
+.k-scheduler .k-scheduler-weekview .k-scheduler-content .k-event .sf-event-template .sf-event-workflow-duration {
+    background: #ffe599;
+    color: #000;
+}
+
+.k-scheduler .k-scheduler-dayview .k-event .sf-event-template .sf-event-workflow-template, 
+.k-scheduler .k-scheduler-dayview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-workflow-template, 
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-workflow-template, 
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .sf-event-workflow-template {
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.k-scheduler .k-scheduler-weekview .k-scheduler-content .k-event .sf-event-template .sf-event-workflow-template {
+    background: #000;
+    color: #fff;
+      overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.k-scheduler .k-scheduler-weekview .k-scheduler-header .k-scheduler-header-wrap .k-event .sf-event-template .sf-event-title .abs-center-Y,
+.k-scheduler .k-scheduler-monthview .k-scheduler-content .k-event .sf-event-template .abs-center-Y{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+/*....end.....*/
+.k-tooltip{
+    background: #fff;
+    border-color: #43a0cc;
+    border-width: 1px;
+    color: #000;
+}
+.k-tooltip-button {
+    margin-right: -7px;
+}
+.k-callout-n {
+    border-color: #43a0cc;
+    border-width: 1px;
+    transform: rotate(45deg);
+    border-bottom: none;
+    border-right: none;
+    background: #fff;
+    height: 8px;
+    width: 8px;
+    top:-5px;
+}
+.k-callout-s{
+    border-color: #43a0cc;
+    border-width: 1px;
+    transform: rotate(45deg);
+    border-top: none;
+    border-left: none;
+    background: #fff;
+    height: 8px;
+    width: 8px;
+    bottom: -5px;
+}
+.tooltip-container {
+    min-width: 100px;
+}
+.tooltip-container .tooltip-row {
+    display: flex;
+    /* max-width: 420px;
+    min-width: 200px; */
+}
+.tooltip-container .tooltip-row .label-caldetail {
+    flex: initial;
+    padding-right: 5px;
+    min-width: 140px;
+}
+.tooltip-container .tooltip-row .text {
+    flex: 3;
+    /* min-width: 100px;
+    max-width: 180px; */
+}
+.k-tabstrip .k-content.k-state-active{
+    overflow-x: hidden;
+}
+
+.k-tabstrip-top > .k-tabstrip-items .k-item.k-state-active {
+    border: none !important;
+    border-bottom: 2px solid #337ab7 !important;
+    font-weight: 1.2em;
+}
+
+/* below section added  to make changes in kendo grid filter with calaender */
+.k-filtercell .k-filtercell-wrapper>.k-textbox, .k-filtercell .k-widget:not(.k-dropdown-operator) {
+    display: flex;
+    flex: 1 1 auto;
+    height: 28px !important;
+}
+/* ************************* */
+a.btn , button.btn{
+    margin:2px;
+}
+
+/* Kendo Grid Column data ellipse */
+.custom-grid .k-grid-table tr td {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+
+/* On Popup Open Darken the background */
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: rgba(0,0,0,0.6) !important;
+}
+
+
+.k-list-scroller {
+    overflow-x: hidden !important;
+}
